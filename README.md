@@ -1,4 +1,4 @@
---# Retail-Sales-Insights-SQL
+# Retail-Sales-Insights-SQL
 This project analyzes retail sales data using SQL, covering database creation, data cleaning, and business-driven analysis. It includes queries for sales trends, customer insights, category performance, top customers, and time-based shift analysis using aggregations, window functions, and Common Table Expression.
 
 **#SQL Retail Sale Analysis**
@@ -47,7 +47,7 @@ Count(*)
 From retail_sales
 '''
 
-**#Cleaning of the data **
+--#Cleaning of the data 
 '''
 SELECT * FROM retail_sales
 Where 
