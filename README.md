@@ -2,9 +2,23 @@
 
 
 # SQL Retail Sale Analysis
+
+---
+
+##  Project Overview
+
+This project analyzes retail sales data using MySQL to extract meaningful business insights such as customer behavior, category performance, revenue trends, and shift-wise order distribution.
+
+---
+
+## Database Setup
+
+### Create Database
 ```sql
 CREATE DATABASE sql_project_p3;
 ```
+--- 
+
 ### CREATE TABLE
 ```sql
 CREATE  TABLE retail_sales
@@ -23,10 +37,14 @@ cogs	FLOAT,
 total_sale FLOAT
 )
 ```
+
+--- 
+
 ### Seeing that the table is populated 
 ```sql
 SELECT * FROM retail_sales
 ```
+---
 
 ## DATA EXPLORATION 
 
@@ -34,21 +52,28 @@ SELECT * FROM retail_sales
 ```sql
 Select Count(*) as total_sale FROM retail_sales 
 ```
+---
 
 ### How many unique customers we have?
 ```sql
 Select Count(DISTINCT customer_id) as total_sale From retail_sales
 ```
+---
+
 ### How many unique category we have?
 ```sql
 Select DISTINCT category as total_sale From retail_sales
 ```
+---
+
 ### COUNT of Rows
 ```sql
 Select 
 Count(*)
 From retail_sales
 ```
+---
+
 ### Cleaning of the data 
 ```sql
 SELECT * FROM retail_sales
@@ -75,6 +100,7 @@ Where
      OR 
      total_sale IS NULL;
 ```
+---
     
 ### Deleting the data where null is there
 ```sql
@@ -103,6 +129,8 @@ Where
      OR 
      total_sale IS NULL;
 ```
+---
+
 ## Data Analysis & Business Key Problems & Answers 
 
 ### 1) Write a SQL query to retrieve all columns for sales made on '2022-11-05'
@@ -168,8 +196,6 @@ SELECT
  WHERE rank_ = '1'
 ```
 
-
-
  ### 8) Write a SQL query to find the top 5 customers based on the highest total sales
  ```sql
  SELECT 
@@ -181,7 +207,6 @@ SELECT
  LIMIT 5
  ```
 
- 
  ### 9) write a SQL query to find the number of unique customers who purchased items from each category
  ```sql
  SELECT 
@@ -211,6 +236,7 @@ SELECT
 FROM hourly_sale
 GROUP BY 1
 ```
+---
 
 
 
