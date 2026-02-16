@@ -2,10 +2,10 @@
 
 
 #SQL Retail Sale Analysis
-
+'''sql
 CREATE DATABASE sql_project_p3;
-
-#CREATE TABLE
+'''
+###CREATE TABLE
 
 CREATE  TABLE retail_sales
 
